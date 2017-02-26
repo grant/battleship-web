@@ -4,15 +4,22 @@ import './App.css';
 
 class App extends Component {
   render() {
+    // <img src={logo} className="App-logo" alt="logo" />
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Battleship</h2>
+        <div className="modal">
+          <h1>Battleship</h1>
+          <h3>Ship conquering game</h3>
+          <input type="text" name="name" placeholder="Empire Name"/>
+          <button>Play</button>
+          <hr/>
+          <ul>
+            <li><a href="">Controls</a></li>
+            <li><a href="">Reddit</a></li>
+          </ul>
+          <footer>Game by <a href="https://grant.cm">Grant Timmerman</a></footer>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="map"></div>
       </div>
     );
   }

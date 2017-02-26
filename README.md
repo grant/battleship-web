@@ -1,6 +1,11 @@
 # battleship-web
 A web usage of battleship.
 
+## TODO
+- [ ] Design interface
+- [ ] Create the components for the interface
+- [ ] Create social/share links
+
 ## Develop locally
 ```sh
 npm start
