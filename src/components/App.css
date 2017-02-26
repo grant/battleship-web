@@ -1,3 +1,28 @@
+html, body, #root {
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.modal {
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #eee;
+  box-shadow: rgba(60, 60, 60, 0.3) 2px 2px 2px 2px;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
