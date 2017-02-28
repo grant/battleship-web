@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
+import Map from './Map';
 import logo from '../images/logo.svg';
 import './App.css';
 
 class App extends Component {
+  static PAGE_NAME = {
+    INTRO: 'intro',
+    GAME: 'game',
+  };
+
   nameInput = '';
+
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      page: App.PAGE_NAME.INTRO,
+    };
+  }
 
   /**
    * The app's intro modal.
@@ -26,16 +40,21 @@ class App extends Component {
   }
 
   play() {
-    console.log(this.nameInput.value);
-    console.log(this.refs.name);
+    let name = this.nameInput.value;
+    this.setState({
+      name,
+      page: App.PAGE_NAME.GAME
+    });
   }
 
   render() {
     // <img src={logo} className="App-logo" alt="logo" />
     return (
       <div className="App">
-        {this.getModal()}
-        <div className="map"></div>
+        {this.state.page === App.PAGE_NAME.INTRO ? (
+          this.getModal()
+        ) : (<span />)}
+        <Map />
       </div>
     );
   }

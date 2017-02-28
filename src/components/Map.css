@@ -1,0 +1,16 @@
+.Map {
+  color: red;
+  position: absolute;
+}
+
+.row {
+  line-height: 0;
+}
+
+/* tile */
+.row span {
+  display: inline-block;
+  font-size: 8px;
+  width: 10px;
+  height: 10px;
+}
