@@ -1,10 +1,12 @@
 .Map {
   color: red;
   position: absolute;
+  user-select: none;
 }
 
 .row {
   line-height: 0;
+  font-size: 0;
 }
 
 /* tile */
@@ -13,4 +15,5 @@
   font-size: 8px;
   width: 10px;
   height: 10px;
+  background-color: blue;
 }

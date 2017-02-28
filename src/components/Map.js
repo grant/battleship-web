@@ -15,11 +15,10 @@ class Map extends Component {
     }
     return (
       <div className="Map">
-        {grid.map(row => {
+        {grid.map((row, rowI) => {
           let ff = 3;
-          let divRow = row.map(
-            col => {
-              return <span>hi</span>;
+          let divRow = row.map((col, colI)=> {
+              return <span className={rowI + ',' + colI}>hi</span>;
             });
           return <div className="row">
             {divRow}
