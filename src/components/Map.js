@@ -16,11 +16,10 @@ class Map extends Component {
     return (
       <div className="Map">
         {grid.map((row, rowI) => {
-          let ff = 3;
           let divRow = row.map((col, colI)=> {
-              return <span className={rowI + ',' + colI}>hi</span>;
-            });
-          return <div className="row">
+            return <span key={colI} className={rowI + ',' + colI}>hi</span>;
+          });
+          return <div key={rowI} className="row">
             {divRow}
           </div>;
         })}
