@@ -7,13 +7,14 @@
 .row {
   line-height: 0;
   font-size: 0;
+  white-space: nowrap;
 }
 
 /* tile */
 .row span {
   display: inline-block;
   font-size: 8px;
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   background-color: blue;
 }

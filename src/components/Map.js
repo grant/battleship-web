@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Map.css';
 
-const W = 50;
-const H = 50;
+const W = 10;
+const H = 10;
 
 class Map extends Component {
   render() {

@@ -6,17 +6,38 @@ h1 {
   font-size: 50px;
 }
 
+/* Modal */
 .modal {
   position: absolute;
   z-index: 100;
   width: 500px;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 30px 10px;
   background-color: #eee;
   box-shadow: rgba(60, 60, 60, 0.3) 2px 2px 2px 2px;
 }
+.modal .links .list {
+  list-style: none;
+  padding: 0;
+}
+.modal .links .list li {
+  display: inline-block;
+  padding: 10px;
+}
+.modal a {
+  text-decoration: none;
+  color: dimgray;
+}
+.modal a:hover {
+  text-decoration: underline;
+}
+.modal hr {
+  width: 400px;
+  margin: 60px auto 10px auto;
+}
 
+/* App */
 .App {
   display: flex;
   height: 100%;

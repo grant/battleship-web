@@ -25,16 +25,20 @@ class App extends Component {
   getModal() {
     return (
       <div className="modal">
-        <h1>Battleship</h1>
-        <h3>Ship conquering game</h3>
-        <input ref={(input) => {this.nameInput = input;}} type="text" name="name" placeholder="Empire Name"/>
-        <button onClick={this.play.bind(this)}>Play</button>
+        <div className="header">
+          <h1>Battleship</h1>
+          <h3>Ship conquering game</h3>
+          <input ref={(input) => {this.nameInput = input;}} type="text" name="name" placeholder="Empire Name"/>
+          <button onClick={this.play.bind(this)}>Play</button>
+        </div>
         <hr/>
-        <ul>
-          <li><a href="">Controls</a></li>
-          <li><a href="">Reddit</a></li>
-        </ul>
-        <footer>Game by <a href="https://grant.cm">Grant Timmerman</a></footer>
+        <div className="links">
+          <ul className="list">
+            <li><a href="">Controls</a></li>
+            <li><a href="">Reddit</a></li>
+          </ul>
+          <footer>Game by <a href="https://grant.cm">Grant Timmerman</a></footer>
+        </div>
       </div>
     );
   }
@@ -53,7 +57,7 @@ class App extends Component {
       <div className="App">
         {this.state.page === App.PAGE_NAME.INTRO ? (
           this.getModal()
-        ) : (<span />)}
+        ) : ''}
         <Map />
       </div>
     );
