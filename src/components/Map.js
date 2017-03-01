@@ -19,7 +19,7 @@ class Map extends Component {
           let divRow = row.map((col, colI)=> {
             return <span key={colI} className={rowI + ',' + colI}>hi</span>;
           });
-          return <div key={rowI} className="row">
+          return <div key={rowI} className={'row ' + rowI}>
             {divRow}
           </div>;
         })}
