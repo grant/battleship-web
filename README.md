@@ -12,9 +12,6 @@ npm start
 ```
 
 ## Push to prod
-```sh
-git push heroku master
-```
+- Automatic deploys have been setup on `master` branch on Heroku.
 
-Deployed to heroku at:
-https://battleship-web.herokuapp.com/
+> Deployed to heroku at https://battleship-web.herokuapp.com/
