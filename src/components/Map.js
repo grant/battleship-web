@@ -17,7 +17,9 @@ class Map extends Component {
       <div className="Map">
         {grid.map((row, rowI) => {
           let divRow = row.map((col, colI)=> {
-            return <span key={colI} className={rowI + ',' + colI}>hi</span>;
+            return <span key={colI} className={rowI + ',' + colI}>
+              {colI + ' ' + rowI}
+            </span>;
           });
           return <div key={rowI} className={'row ' + rowI}>
             {divRow}
