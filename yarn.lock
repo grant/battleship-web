@@ -930,9 +930,9 @@ batch@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.5.3.tgz#3f3414f380321743bfc1042f9a83ff1d5824d464"
 
-battleship@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/battleship/-/battleship-0.0.4.tgz#6b9fdeb48d9fc4ed1f23e548545811885ef46340"
+battleship@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/battleship/-/battleship-0.0.6.tgz#dc757a4a299d5fa9cc29efbb852344906a1a7418"
   dependencies:
     enum "^2.4.0"
     segments "^1.0.1"
