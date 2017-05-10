@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Map.css';
+import battleship from 'battleship';
 
 const W = 10;
 const H = 10;
@@ -13,6 +14,8 @@ class Map extends Component {
         grid[y][x] = '';
       }
     }
+    console.log(battleship);
+
     return (
       <div className="Map">
         {grid.map((row, rowI) => {
